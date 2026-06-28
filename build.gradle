@@ -3,9 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_21
-targetCompatibility = JavaVersion.VERSION_21
-
 archivesBaseName = project.mod_id
 version = project.mod_version
 group = project.maven_group
@@ -35,11 +32,13 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.release = 21
-    it.options.encoding = "UTF-8"
+    options.encoding = "UTF-8"
 }
 
 java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
     withSourcesJar()
     withJavadocJar()
 }
