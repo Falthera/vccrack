@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.example.vccrack.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "MixinClientGroupManager",
+    "MixinClientGroup",
+    "MixinClientPlayNetworkHandler"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

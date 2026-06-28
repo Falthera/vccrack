@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "Client-side proof-of-concept for SVC group password security research.",
+  "authors": ["Researcher"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.example.vccrack.VoiceChatCrackMod"],
+    "voicechat": ["com.example.vccrack.VoiceChatCrackMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "voicechat_api": ">=2.5.18",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "vccrack.mixins.json"
+  ],
+  "accessWidener": 1
+}
