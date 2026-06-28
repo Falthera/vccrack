@@ -1,0 +1,12 @@
+.gradle/
+build/
+out/
+*.jar
+*.log
+*.class
+config/vccrack/*.txt
+config/vccrack/*.json
+config/vccrack/*.md
+config/vccrack/wordlists/
+!gradlew
+!gradlew.bat
